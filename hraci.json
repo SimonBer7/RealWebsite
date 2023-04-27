@@ -1,0 +1,64 @@
+{
+  "hraci": [
+    {
+      "jmeno": "Karim",
+      "prijmeni": "Benzema",
+      "cislo": "9",
+      "vek": "35",
+      "datum_narozeni": "19. 12. 1987",
+      "pozice": "útoèník",
+      "vyska": "185cm",
+      "vaha": "81kg",
+      "narodnost": "Francie",
+      "img": "https://assets.laliga.com/squad/2022/t186/p19927/2048x2225/p19927_t186_2022_1_001_000.png"
+    },
+
+    {
+      "jmeno": "Vinícius",
+      "prijmeni": "Júnior",
+      "cislo": "20",
+      "vek": "22",
+      "datum_narozeni": "12. 07. 2000",
+      "pozice": "útoèník",
+      "vyska": "176cm",
+      "vaha": "73kg",
+      "narodnost": "Brazílie",
+      "img": "https://assets.laliga.com/squad/2022/t186/p246333/2048x2048/p246333_t186_2022_1_003_000.png"
+    },
+
+    {
+      "jmeno": "",
+      "prijmeni": "Rodrygo",
+      "cislo": "21",
+      "vek": "22",
+      "datum_narozeni": "09. 01. 2001",
+      "pozice": "útoèník",
+      "vyska": "174cm",
+      "vaha": "64kg",
+      "narodnost": "Brazílie",
+      "img": "https://assets.laliga.com/squad/2022/t186/p440077/2048x2225/p440077_t186_2022_1_001_000.png"
+    },
+
+    {
+      "jmeno": "Eden",
+      "prijmeni": "Hazard",
+      "cislo": "7",
+      "vek": "32",
+      "datum_narozeni": "07. 01. 1991",
+      "pozice": "útoèník",
+      "vyska": "175cm",
+      "vaha": "74kg",
+      "narodnost": "Belgie",
+      "img": "https://assets.laliga.com/squad/2022/t186/p42786/256x278/p42786_t186_2022_1_001_000.png"
+    }
+
+    
+
+
+
+  ]
+
+
+
+  
+}
