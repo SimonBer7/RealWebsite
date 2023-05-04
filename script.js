@@ -13,6 +13,29 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
+class Hrac {
+    constructor(jmeno, prijmeni, cislo, vek, datum_narozeni, pozice, vyska, vaha, narodnost, img) {
+        this.jmeno = jmeno;
+        
+    }
+}
+
+
+
+
+
+$.ajax({
+    url: "https://raw.githubusercontent.com/SimonBer7/RealWebsite/main/hraci.json",
+    dataType: "json",
+    success: function (data) {
+        console.log(data);
+
+    },
+    error: function () { // error callback 
+        alert('Error with connection to website');
+    }
+});
+
 
 
 
