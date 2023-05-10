@@ -299,7 +299,7 @@ class Evidence {
                 hrac.img
             ));
 
-            if (data.pozice === "Trenér") {
+            if (hrac.pozice === "Trenér") {
                 self.addToTrener(new Hrac(
                     hrac.jmeno,
                     hrac.prijmeni,
@@ -312,7 +312,7 @@ class Evidence {
                     hrac.narodnost,
                     hrac.img
                 ));
-            } else if (data.pozice === "Obránce") {
+            } else if (hrac.pozice === "Obránce") {
                 self.addToObrana(new Hrac(
                     hrac.jmeno,
                     hrac.prijmeni,
@@ -325,7 +325,7 @@ class Evidence {
                     hrac.narodnost,
                     hrac.img
                 ));
-            } else if (data.pozice === "Záložník") {
+            } else if (hrac.pozice === "Záložník") {
                 self.addToZaloha(new Hrac(
                     hrac.jmeno,
                     hrac.prijmeni,
@@ -338,7 +338,7 @@ class Evidence {
                     hrac.narodnost,
                     hrac.img
                 ));
-            } else if (data.pozice === "Útoèník") {
+            } else if (hrac.pozice === "Útoèník") {
                 self.addToUtok(new Hrac(
                     hrac.jmeno,
                     hrac.prijmeni,
@@ -351,7 +351,7 @@ class Evidence {
                     hrac.narodnost,
                     hrac.img
                 ));
-            } else if (data.pozice === "Brankáø") {
+            } else if (hrac.pozice === "Brankáø") {
                 self.addToBrana(new Hrac(
                     hrac.jmeno,
                     hrac.prijmeni,
