@@ -55,7 +55,7 @@ class Obchod {
             html += produkt.getCard();
         });
 
-        document.getElementsByClassName(".row").innerHTML = html;
+        document.getElementById("shop").innerHTML = html;
     }
 
 
@@ -271,6 +271,7 @@ class Evidence {
                     }
                     
                 });
+                
                 self.ulozToLocalStorage();
                 self.printPlayers();
             },
@@ -365,7 +366,7 @@ class Evidence {
                     hrac.img
                 ));
             }
-
+            
         });
         self.printPlayers();
     }
