@@ -60,20 +60,21 @@ class Obchod {
 
 
     getFromWeb() {
+        let self = this;
         $.ajax({
             url: "https://raw.githubusercontent.com/SimonBer7/RealWebsite/main/produkty.json",
             dataType: "json",
             success: function (data) {
                 data["produkty"].forEach(produkt => {
 
-                    this.addProdukt(new Produkt(
+                    self.addProdukt(new Produkt(
                         produkt.nazev, 
                         produkt.cena,
                         produkt.img
                     ));
                     
                 });
-                printProducts();
+                self.printProducts();
             },
             error: function () { // error callback 
                 alert('Error with connection to website');
@@ -126,11 +127,36 @@ class Hrac {
 class Evidence {
     constructor() {
         this.hraci = [];
+        this.utocnici = [];
+        this.zaloznici = [];
+        this.obranci = [];
+        this.treneri = [];
+        this.brankari = [];
         this.loadData();
     }
 
     addHrac(hrac) {
         this.hraci.push(hrac);
+    }
+
+    addToBrana(hrac) {
+        this.brankari.push(hrac);
+    }
+
+    addToUtok(hrac) {
+        this.utocnici.push(hrac);
+    }
+
+    addToZaloha(hrac) {
+        this.zaloznici.push(hrac);
+    }
+
+    addToObrana() {
+        this.obranci.push(hrac);
+    }
+
+    addToTrener(hrac) {
+        this.treneri.push(hrac)
     }
 
     loadData() {
@@ -157,13 +183,14 @@ class Evidence {
     }
 
     getFromWeb() {
+        let self = this;
         $.ajax({
             url: "https://raw.githubusercontent.com/SimonBer7/RealWebsite/main/hraci.json",
             dataType: "json",
             success: function (data) {
                 data["hraci"].forEach(hrac => {
                     
-                    this.addHrac(new Hrac(
+                    self.addHrac(new Hrac(
                         hrac.jmeno,
                         hrac.prijmeni,
                         hrac.cislo,
@@ -175,10 +202,77 @@ class Evidence {
                         hrac.narodnost,
                         hrac.img
                     ));
+
+                    if (data.pozice === "Trenér") {
+                        self.addToTrener(new Hrac(
+                            hrac.jmeno,
+                            hrac.prijmeni,
+                            hrac.cislo,
+                            hrac.vek,
+                            hrac.datum_narozeni,
+                            hrac.pozice,
+                            hrac.vyska,
+                            hrac.vaha,
+                            hrac.narodnost,
+                            hrac.img
+                        ));
+                    } else if (data.pozice === "Obránce") {
+                        self.addToObrana(new Hrac(
+                            hrac.jmeno,
+                            hrac.prijmeni,
+                            hrac.cislo,
+                            hrac.vek,
+                            hrac.datum_narozeni,
+                            hrac.pozice,
+                            hrac.vyska,
+                            hrac.vaha,
+                            hrac.narodnost,
+                            hrac.img
+                        ));
+                    } else if (data.pozice === "Záložník") {
+                        self.addToZaloha(new Hrac(
+                            hrac.jmeno,
+                            hrac.prijmeni,
+                            hrac.cislo,
+                            hrac.vek,
+                            hrac.datum_narozeni,
+                            hrac.pozice,
+                            hrac.vyska,
+                            hrac.vaha,
+                            hrac.narodnost,
+                            hrac.img
+                        ));
+                    } else if (data.pozice === "Útoèník") {
+                        self.addToUtok(new Hrac(
+                            hrac.jmeno,
+                            hrac.prijmeni,
+                            hrac.cislo,
+                            hrac.vek,
+                            hrac.datum_narozeni,
+                            hrac.pozice,
+                            hrac.vyska,
+                            hrac.vaha,
+                            hrac.narodnost,
+                            hrac.img
+                        ));
+                    } else if (data.pozice === "Brankáø") {
+                        self.addToBrana(new Hrac(
+                            hrac.jmeno,
+                            hrac.prijmeni,
+                            hrac.cislo,
+                            hrac.vek,
+                            hrac.datum_narozeni,
+                            hrac.pozice,
+                            hrac.vyska,
+                            hrac.vaha,
+                            hrac.narodnost,
+                            hrac.img
+                        ));
+                    }
                     
                 });
-                this.ulozToLocalStorage();
-                this.printPlayers();
+                self.ulozToLocalStorage();
+                self.printPlayers();
             },
             error: function () { // error callback 
                 alert('Error with connection to website');
@@ -188,10 +282,11 @@ class Evidence {
     }
 
     getFromLocalStorage() {
+        let self = this;
         let hraci = JSON.parse(localStorage.getItem("hraci"));
 
         hraci.forEach(hrac => {
-            this.addHrac(new Hrac(
+            self.addHrac(new Hrac(
                 hrac.jmeno,
                 hrac.prijmeni,
                 hrac.cislo,
@@ -203,19 +298,93 @@ class Evidence {
                 hrac.narodnost,
                 hrac.img
             ));
+
+            if (data.pozice === "Trenér") {
+                self.addToTrener(new Hrac(
+                    hrac.jmeno,
+                    hrac.prijmeni,
+                    hrac.cislo,
+                    hrac.vek,
+                    hrac.datum_narozeni,
+                    hrac.pozice,
+                    hrac.vyska,
+                    hrac.vaha,
+                    hrac.narodnost,
+                    hrac.img
+                ));
+            } else if (data.pozice === "Obránce") {
+                self.addToObrana(new Hrac(
+                    hrac.jmeno,
+                    hrac.prijmeni,
+                    hrac.cislo,
+                    hrac.vek,
+                    hrac.datum_narozeni,
+                    hrac.pozice,
+                    hrac.vyska,
+                    hrac.vaha,
+                    hrac.narodnost,
+                    hrac.img
+                ));
+            } else if (data.pozice === "Záložník") {
+                self.addToZaloha(new Hrac(
+                    hrac.jmeno,
+                    hrac.prijmeni,
+                    hrac.cislo,
+                    hrac.vek,
+                    hrac.datum_narozeni,
+                    hrac.pozice,
+                    hrac.vyska,
+                    hrac.vaha,
+                    hrac.narodnost,
+                    hrac.img
+                ));
+            } else if (data.pozice === "Útoèník") {
+                self.addToUtok(new Hrac(
+                    hrac.jmeno,
+                    hrac.prijmeni,
+                    hrac.cislo,
+                    hrac.vek,
+                    hrac.datum_narozeni,
+                    hrac.pozice,
+                    hrac.vyska,
+                    hrac.vaha,
+                    hrac.narodnost,
+                    hrac.img
+                ));
+            } else if (data.pozice === "Brankáø") {
+                self.addToBrana(new Hrac(
+                    hrac.jmeno,
+                    hrac.prijmeni,
+                    hrac.cislo,
+                    hrac.vek,
+                    hrac.datum_narozeni,
+                    hrac.pozice,
+                    hrac.vyska,
+                    hrac.vaha,
+                    hrac.narodnost,
+                    hrac.img
+                ));
+            }
+
         });
-        this.printPlayers();
+        self.printPlayers();
     }
 
     printPlayers() {
-        let html = "";
+        let treneriHTML = "";
+        let brankariHTML = "";
+        let obranciHTML = "";
+        let zalozniciHTML = "";
+        let utocniciHTML = "";
 
-        this.hraci.forEach(hrac => {
-            html += hrac.getCard();
-        });
+        this.treneri.forEach(hrac => {
+            treneriHTML += hrac.getCard();
+        })
 
-        document.getElementsByClassName(".panel").innerHTML = html;
 
+
+        document.getElementById("trener").innerHTML = treneriHTML;
+            
     }
 
 
