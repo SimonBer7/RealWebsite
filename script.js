@@ -13,6 +13,8 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
+
+
 class Produkt {
     constructor(nazev, cena, img) {
         this.nazev = nazev;
@@ -101,7 +103,8 @@ class Hrac {
 
     getCard() {
         return ` 
-        <div class="flip-card">
+        <div class="col md-3">
+            <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="${this.img}" alt="Avatar" style="width:300px;height:300px;">
@@ -110,13 +113,14 @@ class Hrac {
                         <h1 id="jmeno">${this.jmeno} ${this.prijmeni}</h1>
                         <p id="datum_narozeni">${this.datum_narozeni}, (<span id="vek">${this.vek}</span> let)</p>
                         <p id="pozice">${this.pozice}</p>
-                        <p>Číslo dresu: <span id="cislo_dresu">${this.cislo}</span></p>
-                        <p>Výška: <span id="vyska">${this.vyska}</span></p>
-                        <p>Váha: <span id="vaha">${this.vaha}</span></p>
-                        <p>Národnost: <span id="narodnost">${this.narodnost}</span></p>
+                        <p>��slo dresu: <span id="cislo_dresu">${this.cislo}</span></p>
+                        <p>V��ka: <span id="vyska">${this.vyska}</span></p>
+                        <p>V�ha: <span id="vaha">${this.vaha}</span></p>
+                        <p>N�rodnost: <span id="narodnost">${this.narodnost}</span></p>
                     </div>
                 </div>
             </div>
+        </div>
         `;
     }
 
@@ -127,11 +131,6 @@ class Hrac {
 class Evidence {
     constructor() {
         this.hraci = [];
-        this.utocnici = [];
-        this.zaloznici = [];
-        this.obranci = [];
-        this.treneri = [];
-        this.brankari = [];
         this.loadData();
     }
 
@@ -139,25 +138,6 @@ class Evidence {
         this.hraci.push(hrac);
     }
 
-    addToBrana(hrac) {
-        this.brankari.push(hrac);
-    }
-
-    addToUtok(hrac) {
-        this.utocnici.push(hrac);
-    }
-
-    addToZaloha(hrac) {
-        this.zaloznici.push(hrac);
-    }
-
-    addToObrana() {
-        this.obranci.push(hrac);
-    }
-
-    addToTrener(hrac) {
-        this.treneri.push(hrac)
-    }
 
     loadData() {
         if (localStorage.getItem("hraci") == null) {
@@ -182,6 +162,7 @@ class Evidence {
         localStorage.removeItem("hraci");
     }
 
+
     getFromWeb() {
         let self = this;
         $.ajax({
@@ -203,76 +184,11 @@ class Evidence {
                         hrac.img
                     ));
 
-                    if (hrac.pozice === "Trenér") {
-                        self.addToTrener(new Hrac(
-                            hrac.jmeno,
-                            hrac.prijmeni,
-                            hrac.cislo,
-                            hrac.vek,
-                            hrac.datum_narozeni,
-                            hrac.pozice,
-                            hrac.vyska,
-                            hrac.vaha,
-                            hrac.narodnost,
-                            hrac.img
-                        ));
-                    } else if (hrac.pozice === "Obránce") {
-                        self.addToObrana(new Hrac(
-                            hrac.jmeno,
-                            hrac.prijmeni,
-                            hrac.cislo,
-                            hrac.vek,
-                            hrac.datum_narozeni,
-                            hrac.pozice,
-                            hrac.vyska,
-                            hrac.vaha,
-                            hrac.narodnost,
-                            hrac.img
-                        ));
-                    } else if (hrac.pozice === "Záložník") {
-                        self.addToZaloha(new Hrac(
-                            hrac.jmeno,
-                            hrac.prijmeni,
-                            hrac.cislo,
-                            hrac.vek,
-                            hrac.datum_narozeni,
-                            hrac.pozice,
-                            hrac.vyska,
-                            hrac.vaha,
-                            hrac.narodnost,
-                            hrac.img
-                        ));
-                    } else if (hrac.pozice === "Útočník") {
-                        self.addToUtok(new Hrac(
-                            hrac.jmeno,
-                            hrac.prijmeni,
-                            hrac.cislo,
-                            hrac.vek,
-                            hrac.datum_narozeni,
-                            hrac.pozice,
-                            hrac.vyska,
-                            hrac.vaha,
-                            hrac.narodnost,
-                            hrac.img
-                        ));
-                    } else if (hrac.pozice === "Brankář") {
-                        self.addToBrana(new Hrac(
-                            hrac.jmeno,
-                            hrac.prijmeni,
-                            hrac.cislo,
-                            hrac.vek,
-                            hrac.datum_narozeni,
-                            hrac.pozice,
-                            hrac.vyska,
-                            hrac.vaha,
-                            hrac.narodnost,
-                            hrac.img
-                        ));
-                    }
+                    
                     
                 });
                 
-                self.ulozToLocalStorage();
+                //self.ulozToLocalStorage();
                 self.printPlayers();
             },
             error: function () { // error callback 
@@ -299,92 +215,19 @@ class Evidence {
                 hrac.narodnost,
                 hrac.img
             ));
-
-            if (hrac.pozice === "Trenér") {
-                self.addToTrener(new Hrac(
-                    hrac.jmeno,
-                    hrac.prijmeni,
-                    hrac.cislo,
-                    hrac.vek,
-                    hrac.datum_narozeni,
-                    hrac.pozice,
-                    hrac.vyska,
-                    hrac.vaha,
-                    hrac.narodnost,
-                    hrac.img
-                ));
-            } else if (hrac.pozice === "Obránce") {
-                self.addToObrana(new Hrac(
-                    hrac.jmeno,
-                    hrac.prijmeni,
-                    hrac.cislo,
-                    hrac.vek,
-                    hrac.datum_narozeni,
-                    hrac.pozice,
-                    hrac.vyska,
-                    hrac.vaha,
-                    hrac.narodnost,
-                    hrac.img
-                ));
-            } else if (hrac.pozice === "Záložník") {
-                self.addToZaloha(new Hrac(
-                    hrac.jmeno,
-                    hrac.prijmeni,
-                    hrac.cislo,
-                    hrac.vek,
-                    hrac.datum_narozeni,
-                    hrac.pozice,
-                    hrac.vyska,
-                    hrac.vaha,
-                    hrac.narodnost,
-                    hrac.img
-                ));
-            } else if (hrac.pozice === "Útočník") {
-                self.addToUtok(new Hrac(
-                    hrac.jmeno,
-                    hrac.prijmeni,
-                    hrac.cislo,
-                    hrac.vek,
-                    hrac.datum_narozeni,
-                    hrac.pozice,
-                    hrac.vyska,
-                    hrac.vaha,
-                    hrac.narodnost,
-                    hrac.img
-                ));
-            } else if (hrac.pozice === "Brankář") {
-                self.addToBrana(new Hrac(
-                    hrac.jmeno,
-                    hrac.prijmeni,
-                    hrac.cislo,
-                    hrac.vek,
-                    hrac.datum_narozeni,
-                    hrac.pozice,
-                    hrac.vyska,
-                    hrac.vaha,
-                    hrac.narodnost,
-                    hrac.img
-                ));
-            }
             
         });
         self.printPlayers();
     }
 
     printPlayers() {
-        let treneriHTML = "";
-        let brankariHTML = "";
-        let obranciHTML = "";
-        let zalozniciHTML = "";
-        let utocniciHTML = "";
+        let html = "";
 
-        this.treneri.forEach(hrac => {
-            treneriHTML += hrac.getCard();
-        })
+        this.hraci.forEach(hrac => {
+            html += hrac.getCard();
+        });
 
-
-
-        document.getElementById("trener").innerHTML = treneriHTML;
+        document.getElementById("hraci").innerHTML = html;
             
     }
 
@@ -397,6 +240,12 @@ class Evidence {
 $(document).ready(function () {
     var evidence = new Evidence();
     var obchod = new Obchod();
+
+    $("#buttonHraci").click(function () {
+        $("#panel").slideToggle();
+    });
+
+
 })
 
 

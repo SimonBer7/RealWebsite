@@ -25,7 +25,7 @@
 body {
     background-image: url('./img/bg.jpg');
     background-size: cover;
-    
+    background-attachment: fixed;
 }
 
 
@@ -68,3 +68,5 @@ body {
     color: white;
     transform: rotateY(180deg);
 }
+
+
