@@ -25,17 +25,17 @@
                 <span class="fs-2 mx-5 text-white">Real Madrid</span>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
-                    <li><a href="aboutClub.html" class="nav-link px-2 text-white">O klubu</a></li>
-                    <li><a href="sestava.html" class="nav-link px-2 text-white">Sestava</a></li>
-                    <li><a href="shop.html" class="nav-link px-2 text-white">FanShop</a></li>
+                    <li><a href="index.html" class="nav-link p-3 text-white">Home</a></li>
+                    <li><a href="aboutClub.html" class="nav-link p-3 text-white active">O klubu</a></li>
+                    <li><a href="sestava.html" class="nav-link p-3 text-white">Sestava</a></li>
+                    <li><a href="shop.html" class="nav-link p-3 text-white">FanShop</a></li>
                 </ul>
 
 
 
                 <div class="text-end">
                     <button type="button" class="btn btn-secondary text-black border border-white me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Login</button>
-                    <button type="button" class="btn btn-secondary text-black border border-white">Sign-up</button>
+                    <button type="button" class="btn btn-secondary text-black border border-white me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions2" aria-controls="offcanvasWithBothOptions2">Sign-up</button>
                 </div>
             </div>
         </div>
@@ -64,6 +64,35 @@
             </form>
         </div>
     </div>
+
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions2" aria-labelledby="offcanvasWithBothOptionsLabel2">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-center" id="offcanvasWithBothOptionsLabel2">Sign in</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form>
+                <div class="form-group p-3">
+                    <label for="exampleInputEmail2">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Zadej email">
+                </div>
+                <div class="form-group p-3">
+                    <label for="exampleInputPassword2">Heslo</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Heslo">
+                </div>
+                <div class="form-group p-3">
+                    <label for="exampleInputPassword2">Heslo</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Zadejte heslo znovu">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
 
     <div class="container bg-light p-3 rounded">
 

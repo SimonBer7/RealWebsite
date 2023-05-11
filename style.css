@@ -69,4 +69,21 @@ body {
     transform: rotateY(180deg);
 }
 
+#buttonHraci {
+    width: 100%;
+    height: 100px;
+    background-color: lightsteelblue;
+}
 
+#buttonHraci:hover{
+    background-color: lightblue;
+}
+
+.active {
+    background-color: lightsteelblue;
+}
+
+.nav-link{
+    border-radius: 10px;
+    margin-right: 20px;
+}

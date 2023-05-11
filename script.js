@@ -113,10 +113,10 @@ class Hrac {
                         <h1 id="jmeno">${this.jmeno} ${this.prijmeni}</h1>
                         <p id="datum_narozeni">${this.datum_narozeni}, (<span id="vek">${this.vek}</span> let)</p>
                         <p id="pozice">${this.pozice}</p>
-                        <p>ÄŒÃ­slo dresu: <span id="cislo_dresu">${this.cislo}</span></p>
-                        <p>VÃ½Å¡ka: <span id="vyska">${this.vyska}</span></p>
-                        <p>VÃ¡ha: <span id="vaha">${this.vaha}</span></p>
-                        <p>NÃ¡rodnost: <span id="narodnost">${this.narodnost}</span></p>
+                        <p>Èíslo dresu: <span id="cislo_dresu">${this.cislo}</span></p>
+                        <p>Výška: <span id="vyska">${this.vyska}</span></p>
+                        <p>Váha: <span id="vaha">${this.vaha}</span></p>
+                        <p>Národnost: <span id="narodnost">${this.narodnost}</span></p>
                     </div>
                 </div>
             </div>
