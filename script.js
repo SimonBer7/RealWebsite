@@ -110,10 +110,10 @@ class Hrac {
                         <h1 id="jmeno">${this.jmeno} ${this.prijmeni}</h1>
                         <p id="datum_narozeni">${this.datum_narozeni}, (<span id="vek">${this.vek}</span> let)</p>
                         <p id="pozice">${this.pozice}</p>
-                        <p>»Ìslo dresu: <span id="cislo_dresu">${this.cislo}</span></p>
-                        <p>V˝öka: <span id="vyska">${this.vyska}</span> cm</p>
-                        <p>V·ha: <span id="vaha">${this.vaha}</span> kg</p>
-                        <p>N·rodnost: <span id="narodnost">${this.narodnost}</span></p>
+                        <p>ƒå√≠slo dresu: <span id="cislo_dresu">${this.cislo}</span></p>
+                        <p>V√Ω≈°ka: <span id="vyska">${this.vyska}</span></p>
+                        <p>V√°ha: <span id="vaha">${this.vaha}</span></p>
+                        <p>N√°rodnost: <span id="narodnost">${this.narodnost}</span></p>
                     </div>
                 </div>
             </div>
@@ -203,7 +203,7 @@ class Evidence {
                         hrac.img
                     ));
 
-                    if (hrac.pozice === "TrenÈr") {
+                    if (hrac.pozice === "Tren√©r") {
                         self.addToTrener(new Hrac(
                             hrac.jmeno,
                             hrac.prijmeni,
@@ -216,7 +216,7 @@ class Evidence {
                             hrac.narodnost,
                             hrac.img
                         ));
-                    } else if (hrac.pozice === "Obr·nce") {
+                    } else if (hrac.pozice === "Obr√°nce") {
                         self.addToObrana(new Hrac(
                             hrac.jmeno,
                             hrac.prijmeni,
@@ -229,7 +229,7 @@ class Evidence {
                             hrac.narodnost,
                             hrac.img
                         ));
-                    } else if (hrac.pozice === "Z·loûnÌk") {
+                    } else if (hrac.pozice === "Z√°lo≈æn√≠k") {
                         self.addToZaloha(new Hrac(
                             hrac.jmeno,
                             hrac.prijmeni,
@@ -242,7 +242,7 @@ class Evidence {
                             hrac.narodnost,
                             hrac.img
                         ));
-                    } else if (hrac.pozice === "⁄toËnÌk") {
+                    } else if (hrac.pozice === "√ötoƒçn√≠k") {
                         self.addToUtok(new Hrac(
                             hrac.jmeno,
                             hrac.prijmeni,
@@ -255,7 +255,7 @@ class Evidence {
                             hrac.narodnost,
                             hrac.img
                         ));
-                    } else if (hrac.pozice === "Brank·¯") {
+                    } else if (hrac.pozice === "Brank√°≈ô") {
                         self.addToBrana(new Hrac(
                             hrac.jmeno,
                             hrac.prijmeni,
@@ -300,7 +300,7 @@ class Evidence {
                 hrac.img
             ));
 
-            if (hrac.pozice === "TrenÈr") {
+            if (hrac.pozice === "Tren√©r") {
                 self.addToTrener(new Hrac(
                     hrac.jmeno,
                     hrac.prijmeni,
@@ -313,7 +313,7 @@ class Evidence {
                     hrac.narodnost,
                     hrac.img
                 ));
-            } else if (hrac.pozice === "Obr·nce") {
+            } else if (hrac.pozice === "Obr√°nce") {
                 self.addToObrana(new Hrac(
                     hrac.jmeno,
                     hrac.prijmeni,
@@ -326,7 +326,7 @@ class Evidence {
                     hrac.narodnost,
                     hrac.img
                 ));
-            } else if (hrac.pozice === "Z·loûnÌk") {
+            } else if (hrac.pozice === "Z√°lo≈æn√≠k") {
                 self.addToZaloha(new Hrac(
                     hrac.jmeno,
                     hrac.prijmeni,
@@ -339,7 +339,7 @@ class Evidence {
                     hrac.narodnost,
                     hrac.img
                 ));
-            } else if (hrac.pozice === "⁄toËnÌk") {
+            } else if (hrac.pozice === "√ötoƒçn√≠k") {
                 self.addToUtok(new Hrac(
                     hrac.jmeno,
                     hrac.prijmeni,
@@ -352,7 +352,7 @@ class Evidence {
                     hrac.narodnost,
                     hrac.img
                 ));
-            } else if (hrac.pozice === "Brank·¯") {
+            } else if (hrac.pozice === "Brank√°≈ô") {
                 self.addToBrana(new Hrac(
                     hrac.jmeno,
                     hrac.prijmeni,
