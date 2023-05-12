@@ -25,7 +25,7 @@ class Produkt {
 
     getCard() {
         return ` 
-        <div class="col-md-3">
+        <div class="m-3 rounded">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="${this.img}" alt="Card image cap">
                     <div class="card-body">
@@ -102,29 +102,28 @@ class Hrac {
 
 
     getCard() {
-        return ` 
-        <div class="col md-3">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="${this.img}" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
+        return `
+            <div class="m-3 rounded">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="${this.img}" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
                     <div class="flip-card-back">
                         <h1 id="jmeno">${this.jmeno} ${this.prijmeni}</h1>
                         <p id="datum_narozeni">${this.datum_narozeni}, (<span id="vek">${this.vek}</span> let)</p>
                         <p id="pozice">${this.pozice}</p>
-                        <p>Èíslo dresu: <span id="cislo_dresu">${this.cislo}</span></p>
-                        <p>Výška: <span id="vyska">${this.vyska}</span></p>
-                        <p>Váha: <span id="vaha">${this.vaha}</span></p>
-                        <p>Národnost: <span id="narodnost">${this.narodnost}</span></p>
+                        <p>ÄŒÃ­slo dresu: <span id="cislo_dresu">${this.cislo}</span></p>
+                        <p>VÃ½Å¡ka: <span id="vyska">${this.vyska}</span></p>
+                        <p>VÃ¡ha: <span id="vaha">${this.vaha}</span></p>
+                        <p>NÃ¡rodnost: <span id="narodnost">${this.narodnost}</span></p>
                     </div>
-                </div>
+                    </div>
+                 </div>
             </div>
-        </div>
-        `;
+            `;
+
     }
-
-
 }
 
 
@@ -226,14 +225,8 @@ class Evidence {
         this.hraci.forEach(hrac => {
             html += hrac.getCard();
         });
-
-        document.getElementById("hraci").innerHTML = html;
-            
+        document.getElementById("hraci").innerHTML = html;    
     }
-
-
-
-
 }
 
 
