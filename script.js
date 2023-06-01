@@ -15,75 +15,6 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-class Produkt {
-    constructor(nazev, cena, img) {
-        this.nazev = nazev;
-        this.cena = cena;
-        this.img = img;
-    }
-
-
-    getCard() {
-        return ` 
-        <div class="m-3 rounded">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="${this.img}" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">${this.nazev}</h5>
-                        <p class="card-text">Cena: ${this.cena}</p>
-                        <a href="#" class="btn btn-primary">KOUPIT</a>
-                    </div>
-                </div>
-            </div>
-        `;
-    }
-
-}
-
-class Obchod {
-    constructor() {
-        this.produkty = [];
-        this.getFromWeb();
-    }
-
-    addProdukt(produkt) {
-        this.produkty.push(produkt);
-    }
-
-    printProducts() {
-        let html = "";
-
-        this.produkty.forEach(produkt => {
-            html += produkt.getCard();
-        });
-
-        document.getElementById("shop").innerHTML = html;
-    }
-
-
-    getFromWeb() {
-        let self = this;
-        $.ajax({
-            url: "https://raw.githubusercontent.com/SimonBer7/RealWebsite/main/produkty.json",
-            dataType: "json",
-            success: function (data) {
-                data["produkty"].forEach(produkt => {
-
-                    self.addProdukt(new Produkt(
-                        produkt.nazev, 
-                        produkt.cena,
-                        produkt.img
-                    ));
-                    
-                });
-                self.printProducts();
-            },
-            error: function () { // error callback 
-                alert('Error with connection to website');
-            }
-        });
-    }
-}
 
 
 class Hrac {
@@ -187,7 +118,7 @@ class Evidence {
                     
                 });
                 
-                //self.ulozToLocalStorage();
+                self.ulozToLocalStorage();
                 self.printPlayers();
             },
             error: function () { // error callback 
@@ -232,7 +163,6 @@ class Evidence {
 
 $(document).ready(function () {
     var evidence = new Evidence();
-    var obchod = new Obchod();
 
     $("#buttonHraci").click(function () {
         $("#panel").slideToggle();
@@ -240,17 +170,6 @@ $(document).ready(function () {
 
 
 })
-
-
-
-
-
-
-
-
-
-
-
 
 
 

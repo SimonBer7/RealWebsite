@@ -22,11 +22,14 @@
     overflow: hidden;
 }
 
+
 body {
     background-image: url('./img/bg.jpg');
     background-size: cover;
     background-attachment: fixed;
+
 }
+
 
 
 .flip-card {
@@ -88,6 +91,11 @@ body {
     margin-right: 20px;
 }
 
+.nav-link:hover{
+    background-color: lightblue;
+}
+
+
 .active:hover{
     background-color: lightblue;
 }
@@ -121,3 +129,14 @@ body {
     background-color: lightsteelblue;
 }
 
+#footer{
+    background-color: white;
+}
+
+#footer .nav-link{
+    background-color: lightsteelblue;
+}
+
+#footer .nav-link:hover{
+    background-color: lightblue;
+}
