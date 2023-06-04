@@ -47,9 +47,9 @@ class Obchod {
         this.produkty.push(produkt);
     }
 
-    addToBag(cardElement) {
-            this.bag.push(cardElement);
-            this.ulozToLocalStorage();
+    addToBag(cardElement) {   
+        this.bag.push(cardElement);
+        this.ulozToLocalStorage();
         
     }
 
@@ -97,6 +97,7 @@ class Obchod {
                         produkt.img
                     ));
                 });
+                self.vymazLocalStorage();
                 self.printProducts();
             },
             error: function () {

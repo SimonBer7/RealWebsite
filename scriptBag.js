@@ -58,7 +58,6 @@ class Obchod {
     }
 
     
-
     getFromLocalStorage() {
         let self = this;
         let produkty = JSON.parse(localStorage.getItem("produkty"));

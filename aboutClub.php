@@ -59,11 +59,11 @@
 
 
 
-    <div class="container bg-light p-3 rounded">
+    <div class="container bg-light p-3 mb-5 rounded">
 
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Historie, <span class="text-muted">a mnohem více právě zde</span></h2>
+                <h1 class="featurette-heading">Historie, <span class="text-muted">a mnohem více právě zde</span></h1>
                 <p class="lead">
                     <br> Klub byl založen v roce 1902, ale právo nosit titul Real (královský) mu bylo uděleno až v roce 1920 králem Alfonsem XIII (v letech 1931-40 slovo Real odebráno z důvodu existence Druhé Španělské republiky). Poslední kosmetická změna názvu přišla v roce 1941, kdy bylo z názvu odstraněno anglické Football Club, které bylo nahrazeno španělským Club de Fútbol. Stalo se tak z důvodu pečlivého frankistického potírání všech anglicismů v zemi. V roce 1920 se název klubu změnil se svolením krále na Real Madrid Club de Fútbol.
                 </p>
@@ -85,6 +85,136 @@
             </div>
         </div>
 
+        <br>
+        <button class="btn" id="trofeje">Seznam trofejí Realu Madrid</button>
+
+        <table class="table" id="table" style="display: none;">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Sezóna</th>
+                    <th>Trofej</th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr>
+                    <td>1955</td>
+                    <td>Latinský pohár</td>
+                </tr>
+                <tr>
+                    <td>1955/1956</td>
+                    <td>Pohár mistrů evropských zemí</td>
+                </tr>
+                <tr>
+                    <td>1956/1957</td>
+                    <td>Pohár mistrů evropských zemí</td>
+                </tr>
+                <tr>
+                    <td>1957</td>
+                    <td>Latinský pohár</td>
+                </tr>
+                <tr>
+                    <td>1957/1958</td>
+                    <td>Pohár mistrů evropských zemí</td>
+                </tr>
+                <tr>
+                    <td>1958/1959</td>
+                    <td>Pohár mistrů evropských zemí</td>
+                </tr>
+                <tr>
+                    <td>1959/1960</td>
+                    <td>Pohár mistrů evropských zemí</td>
+                </tr>
+                <tr>
+                    <td>1960</td>
+                    <td>Interkontinentální pohár</td>
+                </tr>
+                <tr>
+                    <td>1965/1966</td>
+                    <td>Pohár mistrů evropských zemí</td>
+                </tr>
+                 <tr>
+                    <td>1984/1985</td>
+                    <td>Pohár UEFA</td>
+                </tr>
+                <tr>
+                    <td>1985/1986</td>
+                    <td>Liga mistrů UEFA</td>
+                </tr>
+                <tr>
+                    <td>1997/1998</td>
+                    <td>Liga mistrů UEFA</td>
+                </tr>
+                 <tr>
+                    <td>1998</td>
+                    <td>Interkontinentální pohár</td>
+                </tr>
+                <tr>
+                    <td>2001/2002</td>
+                    <td>Liga mistrů UEFA</td>
+                </tr>
+                <tr>
+                    <td>2002</td>
+                    <td>Superpohár UEFA</td>
+                </tr>
+                 <tr>
+                    <td>2002</td>
+                    <td>Interkontinentální pohár</td>
+                </tr>
+                <tr>
+                    <td>2013/2014</td>
+                    <td>Liga mistrů UEFA</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>Superpohár UEFA</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>Mistrovství světa ve fotbale klubů</td>
+                </tr>
+                <tr>
+                    <td>2015/2016</td>
+                    <td>Liga mistrů UEFA</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>Superpohár UEFA</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>Mistrovství světa ve fotbale klubů</td>
+                </tr>
+                <tr>
+                    <td>2016/2017</td>
+                    <td>Liga mistrů UEFA</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>Superpohár UEFA</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>Mistrovství světa ve fotbale klubů</td>
+                </tr>
+                <tr>
+                    <td>2017/2018</td>
+                    <td>Liga mistrů UEFA</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>Mistrovství světa ve fotbale klubů</td>
+                </tr>
+                <tr>
+                    <td>2021/2022</td>
+                    <td>Liga mistrů UEFA</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Superpohár UEFA</td>
+                </tr>
+            </tbody>
+        </table>
+
 
     </div>
     <br>
@@ -98,7 +228,11 @@
 
 
 
-    
+    <script>
+    $("#trofeje").click(function () {
+        $("#table").fadeToggle();  
+    });
+    </script>
 
 </body>
 </html>

@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>REAL MADRID</title>
     <link rel="icon" type="image/x-icon" href="./img/favi.png">
-    <link rel="stylesheet" href="aboutClub.php">
-    <link rel="stylesheet" href="sestava.php">
-    <link rel="stylesheet" href="shop.php">
-    <link rel="stylesheet" href="bag.php">
+    <link rel="stylesheet" href="aboutClub.html">
+    <link rel="stylesheet" href="sestava.html">
+    <link rel="stylesheet" href="shop.html">
     <link rel="stylesheet" href="style.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -27,31 +26,15 @@
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="index.php" class="nav-link p-3 text-white active">Home</a></li>
-                    <li><a href="aboutClub.php" class="nav-link p-3 text-white">O klubu</a></li>
-                    <li><a href="sestava.php" class="nav-link p-3 text-white">Sestava</a></li>
-
-                    <?php session_start(); if(isset($_SESSION["email"])){
-                    
-                    ?>
-                    <li><a href="shop.php" class="nav-link p-3 text-white">FanShop</a></li>
-                    <li><a href="bag.php" class="nav-link p-3 text-white">Bag</a></li>
-                    <?php }?>
-
+                    <li><a href="aboutClub.html" class="nav-link p-3 text-white">O klubu</a></li>
+                    <li><a href="sestava.html" class="nav-link p-3 text-white">Sestava</a></li>
+                    <li><a href="shop.html" class="nav-link p-3 text-white">FanShop</a></li>
                 </ul>
 
                 <div class="text-end">
-                    
-                    <?php if(isset($_SESSION["email"])){
-                    ?>
-                    <button id="logout" type="button" class="btn btn-secondary text-black border border-white me-2" onclick="window.location.href = './php/logout.php'">Log-Out</button>
-                    <?php }else{
-
-                    ?>  
-                    <button id="login" type="button" class="btn btn-secondary text-black border border-white me-2" onclick="window.location.href = 'login.php';">Log-In</button>
-                    <button id="signup" type="button" class="btn btn-secondary text-black border border-white me-2" onclick="window.location.href = 'signup.php';">Sign-Up</button>
-                    <?php
-                    }?>
-                 </div>
+                    <button id="login" type="button" class="btn btn-secondary text-black border border-white me-2" onclick="window.location.href = 'login.html';">Log-In</button>
+                    <button id="signup" type="button" class="btn btn-secondary text-black border border-white me-2" onclick="window.location.href = 'signup.html';">Sign-Up</button>
+                </div>
             </div>
         </div>
     </header>
@@ -99,12 +82,9 @@
             <div class="col-md-7">
                 <h2 class="featurette-heading">Real Madrid, <span class="text-muted">tým s velkou historií a úspěchy</span></h2>
                 <p class="lead">
-                    <br><br> Real Madrid CF (celým názvem: Real Madrid Club de Fútbol) je španělský fotbalový klub, který sídlí v Madridu. Od sezóny 1929 hraje v Primera División, španělské nejvyšší fotbalové soutěži. Největšími rivaly Realu Madrid jsou Atlético Madrid a FC Barcelona. Kromě fotbalu má klub také oddíly pro basketbal, tenis, stolní tenis a vodní pólo. Má přezdívku „bílý balet“.
-                    <br><br> Tým Real Madridu se vyznačuje velkým množstvím vynikajících hráčů, kteří prošli klubem. Mezi nejvýznamnější patří jména jako Alfredo Di Stéfano, Ferenc Puskás, Cristiano Ronaldo, Karim Benzema a mnoho dalších. Klub má také dlouholetou rivalitu s jiným madridským týmem Atlético Madrid a také s FC Barcelona.
-                    <br><br> Real Madrid je nejen klubem, ale také silnou značkou a institucí, která má po celém světě velkou fanouškovskou základnu. Jeho historie, vášeň a úspěchy ho činí jedním z nejvýznamnějších klubů ve světovém fotbale.
+                    <br> Real Madrid CF (celým názvem: Real Madrid Club de Fútbol) je španělský fotbalový klub, který sídlí v Madridu. Od sezóny 1929 hraje v Primera División, španělské nejvyšší fotbalové soutěži. Největšími rivaly Realu Madrid jsou Atlético Madrid a FC Barcelona. Kromě fotbalu má klub také oddíly pro basketbal, tenis, stolní tenis a vodní pólo. Má přezdívku „bílý balet“.
                 </p>
                 <br>
-
 
             </div>
             <div class="col-md-5">
@@ -122,8 +102,13 @@
         </footer>
     </div>
 
-   
-    
+
+
+
+
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>

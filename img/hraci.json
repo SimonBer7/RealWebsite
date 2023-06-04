@@ -1,0 +1,339 @@
+{
+  "hraci": [
+    {
+      "id": 1,
+      "jmeno": "Karim",
+      "prijmeni": "Benzema",
+      "cislo": "9",
+      "vek": "35",
+      "datum_narozeni": "19. 12. 1987",
+      "pozice": "Útočník",
+      "vyska": "185cm",
+      "vaha": "81kg",
+      "narodnost": "Francie",
+      "img": "https://assets.laliga.com/squad/2022/t186/p19927/512x512/p19927_t186_2022_1_003_000.png"
+    },
+
+    {
+      "id": 2,
+      "jmeno": "Vinícius",
+      "prijmeni": "Júnior",
+      "cislo": "20",
+      "vek": "22",
+      "datum_narozeni": "12. 07. 2000",
+      "pozice": "Útočník",
+      "vyska": "176cm",
+      "vaha": "73kg",
+      "narodnost": "Brazílie",
+      "img": "https://assets.laliga.com/squad/2022/t186/p246333/512x512/p246333_t186_2022_1_003_000.png"
+    },
+
+    {
+      "id": 3,
+      "jmeno": "",
+      "prijmeni": "Rodrygo",
+      "cislo": "21",
+      "vek": "22",
+      "datum_narozeni": "09. 01. 2001",
+      "pozice": "Útočník",
+      "vyska": "174cm",
+      "vaha": "64kg",
+      "narodnost": "Brazílie",
+      "img": "https://assets.laliga.com/squad/2022/t186/p440077/512x512/p440077_t186_2022_1_003_000.png"
+    },
+
+    {
+      "id": 4,
+      "jmeno": "Eden",
+      "prijmeni": "Hazard",
+      "cislo": "7",
+      "vek": "32",
+      "datum_narozeni": "07. 01. 1991",
+      "pozice": "Útočník",
+      "vyska": "175cm",
+      "vaha": "74kg",
+      "narodnost": "Belgie",
+      "img": "https://assets.laliga.com/squad/2022/t186/p42786/256x278/p42786_t186_2022_1_001_000.png"
+    },
+    
+    {
+      "id": 5,
+      "jmeno": "Marco",
+      "prijmeni": "Asensio",
+      "cislo": "11",
+      "vek": "27",
+      "datum_narozeni": "21. 01. 1996",
+      "pozice": "Útočník",
+      "vyska": "182cm",
+      "vaha": "76kg",
+      "narodnost": "Španělsko",
+      "img": "https://assets.laliga.com/squad/2022/t186/p174292/512x512/p174292_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 6,
+      "jmeno": "Lucas",
+      "prijmeni": "Vázquez",
+      "cislo": "17",
+      "vek": "31",
+      "datum_narozeni": "01. 07. 1991",
+      "pozice": "Útočník",
+      "vyska": "173cm",
+      "vaha": "70kg",
+      "narodnost": "Španělsko",
+      "img": "https://assets.laliga.com/squad/2022/t186/p107593/512x512/p107593_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 7,
+      "jmeno": "Mariano",
+      "prijmeni": "Diaz",
+      "cislo": "24",
+      "vek": "29",
+      "datum_narozeni": "01. 08. 1993",
+      "pozice": "Útočník",
+      "vyska": "180cm",
+      "vaha": "76kg",
+      "narodnost": "Dominikánská republika",
+      "img": "https://assets.laliga.com/squad/2022/t186/p178347/512x512/p178347_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 8,
+      "jmeno": "Toni",
+      "prijmeni": "Kroos",
+      "cislo": "8",
+      "vek": "33",
+      "datum_narozeni": "04. 01. 1990",
+      "pozice": "Záložník",
+      "vyska": "183cm",
+      "vaha": "76kg",
+      "narodnost": "Německo",
+      "img": "https://assets.laliga.com/squad/2022/t186/p44989/512x512/p44989_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 9,
+      "jmeno": "Luka",
+      "prijmeni": "Modrič",
+      "cislo": "10",
+      "vek": "37",
+      "datum_narozeni": "09. 09. 1985",
+      "pozice": "Záložník",
+      "vyska": "172cm",
+      "vaha": "66kg",
+      "narodnost": "Chorvatsko",
+      "img": "https://assets.laliga.com/squad/2022/t186/p37055/512x512/p37055_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 10,
+      "jmeno": "Eduardo",
+      "prijmeni": "Camavinga",
+      "cislo": "12",
+      "vek": "20",
+      "datum_narozeni": "10. 11. 2002",
+      "pozice": "Záložník",
+      "vyska": "182cm",
+      "vaha": "68kg",
+      "narodnost": "Francie",
+      "img": "https://assets.laliga.com/squad/2022/t186/p475561/512x512/p475561_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 11,
+      "jmeno": "Federico",
+      "prijmeni": "Valverde",
+      "cislo": "15",
+      "vek": "24",
+      "datum_narozeni": "22. 07. 1998",
+      "pozice": "Záložník",
+      "vyska": "182cm",
+      "vaha": "78kg",
+      "narodnost": "Uruguay",
+      "img": "https://assets.laliga.com/squad/2022/t186/p223255/512x512/p223255_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 12,
+      "jmeno": "Aurélien",
+      "prijmeni": "Tchouaméni",
+      "cislo": "18",
+      "vek": "23",
+      "datum_narozeni": "27. 01. 2000",
+      "pozice": "Záložník",
+      "vyska": "187cm",
+      "vaha": "81kg",
+      "narodnost": "Francie",
+      "img": "https://assets.laliga.com/squad/2022/t186/p219292/512x512/p219292_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 13,
+      "jmeno": "Daniel",
+      "prijmeni": "Ceballos",
+      "cislo": "19",
+      "vek": "26",
+      "datum_narozeni": "07. 08. 1996",
+      "pozice": "Záložník",
+      "vyska": "179cm",
+      "vaha": "70kg",
+      "narodnost": "Španělsko",
+      "img": "https://assets.laliga.com/squad/2022/t186/p182539/512x512/p182539_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 14,
+      "jmeno": "Daniel",
+      "prijmeni": "Carvajal",
+      "cislo": "2",
+      "vek": "31",
+      "datum_narozeni": "11. 01. 1992",
+      "pozice": "Obránce",
+      "vyska": "173cm",
+      "vaha": "73kg",
+      "narodnost": "Španělsko",
+      "img": "https://assets.laliga.com/squad/2022/t186/p88483/512x512/p88483_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 15,
+      "jmeno": "Eder",
+      "prijmeni": "Militao",
+      "cislo": "3",
+      "vek": "25",
+      "datum_narozeni": "18. 01. 1998",
+      "pozice": "Obránce",
+      "vyska": "186cm",
+      "vaha": "78kg",
+      "narodnost": "Brazílie",
+      "img": "https://assets.laliga.com/squad/2022/t186/p218449/512x512/p218449_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 16,
+      "jmeno": "David",
+      "prijmeni": "Alaba",
+      "cislo": "4",
+      "vek": "30",
+      "datum_narozeni": "24. 06. 1992",
+      "pozice": "Obránce",
+      "vyska": "180cm",
+      "vaha": "78kg",
+      "narodnost": "Rakousko",
+      "img": "https://assets.laliga.com/squad/2022/t186/p50188/512x512/p50188_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 17,
+      "jmeno": "Jesus",
+      "prijmeni": "Vallejo",
+      "cislo": "5",
+      "vek": "26",
+      "datum_narozeni": "05. 01. 1997",
+      "pozice": "Obránce",
+      "vyska": "184cm",
+      "vaha": "79kg",
+      "narodnost": "Španělsko",
+      "img": "https://assets.laliga.com/squad/2022/t186/p178876/512x512/p178876_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 18,
+      "jmeno": "Nacho",
+      "prijmeni": "Fernandez",
+      "cislo": "6",
+      "vek": "33",
+      "datum_narozeni": "18. 01. 1990",
+      "pozice": "Obránce",
+      "vyska": "180cm",
+      "vaha": "76kg",
+      "narodnost": "Španělsko",
+      "img": "https://assets.laliga.com/squad/2022/t186/p88477/512x512/p88477_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 19,
+      "jmeno": "Alvaro",
+      "prijmeni": "Odriozola",
+      "cislo": "16",
+      "vek": "27",
+      "datum_narozeni": "14. 12. 1995",
+      "pozice": "Obránce",
+      "vyska": "176cm",
+      "vaha": "66kg",
+      "narodnost": "Španělsko",
+      "img": "https://assets.laliga.com/squad/2022/t186/p201172/512x512/p201172_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 20,
+      "jmeno": "Antonio",
+      "prijmeni": "Rüdiger",
+      "cislo": "22",
+      "vek": "30",
+      "datum_narozeni": "03. 03. 1993",
+      "pozice": "Obránce",
+      "vyska": "190cm",
+      "vaha": "85kg",
+      "narodnost": "Německo",
+      "img": "https://assets.laliga.com/squad/2022/t186/p102380/512x512/p102380_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 21,
+      "jmeno": "Ferland",
+      "prijmeni": "Mendy",
+      "cislo": "23",
+      "vek": "27",
+      "datum_narozeni": "08. 06. 1995",
+      "pozice": "Obránce",
+      "vyska": "180cm",
+      "vaha": "73kg",
+      "narodnost": "Francie",
+      "img": "https://assets.laliga.com/squad/2022/t186/p206255/512x512/p206255_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 22,
+      "jmeno": "Thibaut",
+      "prijmeni": "Courtois",
+      "cislo": "1",
+      "vek": "30",
+      "datum_narozeni": "11. 05. 1992",
+      "pozice": "Brankář",
+      "vyska": "200cm",
+      "vaha": "96kg",
+      "narodnost": "Belgie",
+      "img": "https://assets.laliga.com/squad/2022/t186/p60772/512x512/p60772_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 23,
+      "jmeno": "Andriy",
+      "prijmeni": "Lunin",
+      "cislo": "13",
+      "vek": "24",
+      "datum_narozeni": "11. 02. 1999",
+      "pozice": "Brankář",
+      "vyska": "191cm",
+      "vaha": "80kg",
+      "narodnost": "Ukrajina",
+      "img": "https://assets.laliga.com/squad/2022/t186/p224965/512x512/p224965_t186_2022_1_003_000.png"
+    },
+    
+    {
+      "id": 24,
+      "jmeno": "Carlo",
+      "prijmeni": "Ancelotti",
+      "cislo": "",
+      "vek": "63",
+      "datum_narozeni": "10. 06. 1959",
+      "pozice": "Trenér",
+      "vyska": "179cm",
+      "vaha": "81kg",
+      "narodnost": "Itálie",
+      "img": "https://assets.laliga.com/squad/2022/t186/man50/256x278/man50_t186_2022_1_001_000.png"
+    }
+  ]
+}

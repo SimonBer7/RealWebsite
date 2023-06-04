@@ -156,12 +156,7 @@ class Evidence {
         this.hraci.forEach(hrac => {
             html += hrac.getCard();
         });
-        let hraciElement = document.getElementById("hraci");
-        if (hraciElement) {
-            hraciElement.innerHTML = html;
-        } else {
-            console.error("Element with ID 'hraci' not found.");
-        }  
+        document.getElementById("hraci").innerHTML = html;    
     }
 }
 
@@ -173,8 +168,7 @@ $(document).ready(function () {
         $("#panel").slideToggle();
     });
 
-    
-    
+
 })
 
 

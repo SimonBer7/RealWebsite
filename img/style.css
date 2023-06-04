@@ -82,20 +82,6 @@ body {
     background-color: lightblue;
 }
 
-#trofeje {
-    width: 100%;
-    height: 100px;
-    background-color: lightsteelblue;
-}
-
-#trofeje:hover {
-    background-color: lightblue;
-}
-
-tr:nth-child(even) {
-    background-color: gainsboro;
-}
-
 .active {
     background-color: lightsteelblue;
 }
