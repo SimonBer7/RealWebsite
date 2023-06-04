@@ -13,7 +13,6 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
-
 class Produkt {
     constructor(nazev, cena, img) {
         this.nazev = nazev;
@@ -21,32 +20,37 @@ class Produkt {
         this.img = img;
     }
 
-
     getCard() {
-        return ` 
+        return `
         <div class="m-3 rounded">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="${this.img}" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">${this.nazev}</h5>
-                        <p class="card-text">Cena: ${this.cena}</p>
-                        <a href="#" class="btn btn-primary">KOUPIT</a>
-                    </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="${this.img}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">${this.nazev}</h5>
+                    <p class="card-text">Cena: ${this.cena}</p>
+                    <button class="btn btn-primary addToBag">KOUPIT</button>
                 </div>
             </div>
+        </div>
         `;
     }
-
 }
 
 class Obchod {
     constructor() {
         this.produkty = [];
+        this.bag = [];
         this.getFromWeb();
     }
 
     addProdukt(produkt) {
         this.produkty.push(produkt);
+    }
+
+    addToBag(cardElement) {
+            this.bag.push(cardElement);
+            this.ulozToLocalStorage();
+        
     }
 
     printProducts() {
@@ -57,31 +61,28 @@ class Obchod {
         });
 
         document.getElementById("shop").innerHTML = html;
+
+        this.getEvent();
     }
 
-    loadData() {
-            if (localStorage.getItem("produkty") == null) {
-                this.getFromWeb();
-                console.log("Data byly nacteny z webu");
-
-            } else if (localStorage.getItem("produkty") != null) {
-                this.getFromLocalStorage();
-                console.log("Data byly nacteny z local storage");
-
-            } else {
-                this.vymazLocalStorage();
-                console.error("Data byly vymazany");
-            }
+    getEvent() {
+        const cards = document.getElementsByClassName("card");
+        for (let i = 0; i < cards.length; i++) {
+            cards[i].addEventListener("click", () => {
+                this.addToBag(this.produkty[i]);
+            });
         }
+        
+    }
 
     ulozToLocalStorage() {
-            localStorage.setItem("produkty", JSON.stringify(this.produkty));
+        console.log(this.bag);
+        localStorage.setItem("produkty", JSON.stringify(this.bag));
     }
 
     vymazLocalStorage() {
-            localStorage.removeItem("produkty");
+        localStorage.removeItem("produkty");
     }
-
 
     getFromWeb() {
         let self = this;
@@ -90,41 +91,22 @@ class Obchod {
             dataType: "json",
             success: function (data) {
                 data["produkty"].forEach(produkt => {
-
                     self.addProdukt(new Produkt(
-                        produkt.nazev, 
+                        produkt.nazev,
                         produkt.cena,
                         produkt.img
                     ));
-                    
                 });
-                self.ulozToLocalStorage();
                 self.printProducts();
             },
-            error: function () { // error callback 
-                alert('Error with connection to website');
+            error: function () {
+                alert('Chyba pøi spojení se stránkou');
             }
         });
     }
-
-    getFromLocalStorage() {
-            let self = this;
-            let produkty = JSON.parse(localStorage.getItem("produkty"));
-
-            produkty.forEach(produkt => {
-                self.addProdukt(new Produkt(
-                    produkt.nazev,
-                    produkt.cena,
-                    produkt.img
-                ));
-
-            });
-            self.printProducts();
-        }
 }
 
-
-$(document).ready(function (){
+$(document).ready(function () {
     var obchod = new Obchod();
-});
 
+});
