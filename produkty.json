@@ -1,0 +1,79 @@
+{
+  "produkty": [
+    {
+      "nazev": "Domácí dres",
+      "cena": 2500,
+      "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0cb077959b7f42afa674ae3500feb499_9366/Domaci_dres_Real_Madrid_22-23_bila_HA2654_01_laydown.jpg"
+    },
+
+    {
+      "nazev": "Venkovní dres",
+      "cena": 2400,
+      "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2105602e944f44d887ccae36012fe7dc_9366/Venkovni_dres_Real_Madrid_22-23_nachova_HA2660_01_laydown.jpg"
+    },
+
+    {
+      "nazev": "Neutrální dres",
+      "cena": 2300,
+      "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a7284a4ce3ae46899ae0ae96009c09a4_9366/Treti_dres_Real_Madrid_22-23_cerna_HI1649_01_laydown.jpg"
+    },
+
+    {
+      "nazev": "Kšiltovka",
+      "cena": 800,
+      "img": "https://im9.cz/iR/importprodukt-orig/161/161e6b6d849d916c0c7f6103a7b7819c--mmf400x400.jpg"
+    },
+
+    {
+      "nazev": "Míč",
+      "cena": 600,
+      "img": "https://www.sportfotbal.cz/data/products/cache/bf7144ac3a4e74458ccb595edf3c5dcd.png"
+    },
+
+    {
+      "nazev": "Taštička",
+      "cena": 700,
+      "img": "https://starsfan.cz/wp-content/uploads/2023/02/7-8-600x599.jpg"
+    },
+
+    {
+      "nazev": "Tričko černé",
+      "cena": 550,
+      "img": "https://starsfan.cz/wp-content/uploads/2023/02/2-8-600x600.jpg"
+    },
+
+    {
+      "nazev": "Tričko bílé",
+      "cena": 580,
+      "img": "https://starsfan.cz/wp-content/uploads/2023/02/1-8-600x600.jpg"
+    },
+
+    {
+      "nazev": "Fidget spinner",
+      "cena": 220,
+      "img": "https://www.sportfotbal.cz/data/products/cache/41969800cccb2e62bbfd1ecddd80c6a1.png"
+    },
+
+    {
+      "nazev": "Hrneček",
+      "cena": 420,
+      "img": "https://m.media-amazon.com/images/I/41iKRL4rXfL.jpg"
+    },
+
+    {
+      "nazev": "Vak",
+      "cena": 470,
+      "img": "https://www.fan-store.cz/gallery/products/thumbs/58842-41575.jpg"
+    },
+
+    {
+      "nazev": "Šála",
+      "cena": 550,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRegttEKaC33O-glyucIN_8gnfjbqu8-dGh1_S2rHONzELjVi4wqpp_FGl2u_1dM89_IIw&usqp=CAU"
+    }
+
+
+
+
+  ]
+}
